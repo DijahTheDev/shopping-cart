@@ -1,0 +1,322 @@
+.wrapper {
+  width: 1200px;
+  margin: auto;
+}
+.orderSelect {
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  justify-content: space-between;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  width: 1000px;
+}
+.centerGridItems {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+  border: 1px solid transparent;
+}
+.centerGridItems:hover {
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+.centerGridItems:hover > button.addToCart {
+  background-color: goldenrod;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.smallBorder {
+  border: 1px solid goldenrod;
+  width: 20px;
+  justify-self: center;
+}
+.free {
+  background-color: black;
+  color: white;
+  margin: 0;
+  width: 70px;
+  font-size: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-self: end;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.costs {
+  display: none;
+}
+.productImgs {
+  width: 250px;
+  margin-top: 25px;
+}
+.pricing {
+  margin-bottom: 0;
+}
+.installments {
+  color: darkgray;
+  margin-top: 0;
+}
+.addToCart {
+  height: 55px;
+  width: 225px;
+  background-color: black;
+  color: white;
+  border: none;
+  justify-self: center;
+  margin-bottom: 10px;
+}
+.cart {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgb(25, 25, 29);
+  color: white;
+  width: 450px;
+  transition: width 0.5s;
+}
+.unseen {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgb(25, 25, 29);
+  color: white;
+  width: 0px;
+  transition: width 0.5s;
+}
+.cartItems {
+  display: grid;
+  grid-template-columns: 70px auto 70px;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 3px solid black;
+}
+.cartButton {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: -60px;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(25, 25, 29);
+  color: white;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+  outline: none;
+}
+.cartHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  font-size: 20px;
+  border-bottom: 3px solid black;
+}
+.cartAllItems {
+  overflow: scroll;
+  max-height: 67%;
+}
+.cartFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  color: darkgray;
+}
+.absoluteFooter {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgb(25, 25, 29);
+  margin-bottom: 20px;
+}
+
+.grandSubTotal {
+  color: goldenrod;
+}
+.checkoutButton {
+  display: flex;
+  justify-content: center;
+}
+.checkoutButtonButton {
+  width: 95%;
+  height: 35px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  padding: 0;
+  outline: none;
+  background-color: black;
+  cursor: pointer;
+}
+.linkToCheckout {
+  text-decoration: none;
+}
+
+.thumbs {
+  width: 60px;
+}
+.itemTitle {
+  font-size: 12px;
+  margin: 0;
+}
+.itemStyle {
+  font-size: 12px;
+  margin: 0;
+  color: gray;
+}
+.quantityCount {
+  font-size: 12px;
+  margin: 0;
+  color: gray;
+}
+.delButton {
+  background-color: rgb(25, 25, 29);
+  color: black;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 900;
+}
+.itemPrice {
+  color: goldenrod;
+  font-size: 12px;
+  margin-left: 0;
+  margin-right: 0;
+
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.lessQuantity {
+  background-color: black;
+  color: gray;
+  outline: none;
+  border: none;
+}
+.moreQuantity {
+  background-color: black;
+  color: gray;
+  outline: none;
+  border: none;
+}
+.itemTotals {
+  text-align: right;
+}
+.quantitiesButtons {
+  display: flex;
+  justify-content: flex-end;
+}
+.checkoutWrapper {
+  margin: 30px auto;
+  width: 600px;
+
+  background-color: rgb(25, 25, 29);
+}
+.checkOutHeader {
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid black;
+
+  color: white;
+}
+.checkOutItems {
+  display: grid;
+  grid-template-columns: auto 60px;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 3px solid black;
+}
+.checkOutItemTitle {
+  color: white;
+}
+.checkOutItemStyle {
+  color: gray;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+.checkOutItemQuantity {
+  color: gray;
+  margin: 0;
+  font-size: 12px;
+}
+.checkOutPrice {
+  color: goldenrod;
+}
+.checkOutFooter {
+  text-align: center;
+  color: white;
+}
+.checkOutFooterPrice {
+  color: goldenrod;
+  padding-bottom: 30px;
+}
+.shopOrConfirm {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* styling for receipt */
+
+.receiptWrapper {
+  margin: 30px auto;
+  width: 600px;
+  border: 1px solid black;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.receiptThankYou {
+  text-align: center;
+}
+.receiptItem {
+  display: grid;
+  grid-template-columns: auto 70px;
+}
+
+.receiptItemDesc {
+  border-bottom: 1px dashed black;
+}
+.receiptQuantity {
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.receiptStyle {
+  font-size: 12px;
+  margin: 0;
+}
+.receiptFooter {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.contShopping {
+  background-color: black;
+  color: white;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.confirmOrder {
+  background-color: black;
+  color: white;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
